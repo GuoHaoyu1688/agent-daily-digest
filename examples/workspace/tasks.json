@@ -1,0 +1,23 @@
+[
+  {
+    "id": "review",
+    "title": "Review the draft report",
+    "agent": "Report assistant",
+    "due_at": "2026-10-14",
+    "priority": 1
+  },
+  {
+    "id": "practice",
+    "title": "Complete practice set",
+    "agent": "Study assistant",
+    "due_at": "2026-10-15",
+    "priority": 2
+  },
+  {
+    "id": "draft",
+    "title": "Prepare content draft",
+    "agent": "Content assistant",
+    "due_at": "2026-10-15",
+    "priority": 2
+  }
+]

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daily Digest</title><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<aside class="sidebar"><a class="brand" href="/">Daily Digest</a><p class="nav-label">Agents</p><nav id="agents" aria-label="Filter by assistant"></nav><div class="local-label"><span class="status-dot"></span>Local workspace</div></aside>
+<main><header><div><h1>Today, at a glance</h1><p>Outputs, deadlines, and the work ahead.</p></div><div class="header-actions"><label class="sr-only" for="date">Digest date</label><input id="date" type="date"><button id="scan" class="primary">Scan workspace</button></div></header>
+<p id="notice" class="notice" role="status" hidden></p>
+<section id="stats" class="stats" aria-label="Daily totals"></section>
+<section id="countdowns" class="countdowns" aria-label="Upcoming dates"></section>
+<div class="columns"><section class="panel timeline"><div class="section-heading"><h2>Output timeline</h2><span id="output-count"></span></div><div id="outputs"></div></section>
+<section class="panel tasks"><div class="section-heading"><h2>Tasks</h2><a id="export" href="/api/report">Export daily report</a></div><div id="tasks"></div></section></div>
+</main>
+<section id="preview" class="preview" aria-label="File preview" hidden><div class="preview-heading"><div><h2 id="preview-title"></h2><p id="preview-meta"></p></div><div class="header-actions"><a id="download" class="button">Open file</a><button id="make-task" class="primary">Mark as task</button><button id="close-preview" aria-label="Close preview" class="close">×</button></div></div><div id="preview-body"></div></section>
+</body></html>

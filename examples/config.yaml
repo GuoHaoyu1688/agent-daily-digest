@@ -1,0 +1,17 @@
+roots: [workspace]
+timezone: Asia/Shanghai
+max_file_size: 10000000
+include: ['**/*']
+exclude: ['**/.git/**', '**/.env', tasks.json, tasks.csv]
+agents:
+  - glob: 'report/**'
+    name: Report assistant
+  - prefix: 'study/'
+    name: Study assistant
+  - regex: '^content/'
+    name: Content assistant
+countdowns:
+  - name: Exam day
+    date: '2026-11-29'
+  - name: Project review
+    date: '2026-10-22'
